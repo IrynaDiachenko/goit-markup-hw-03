@@ -6,6 +6,9 @@
     --main-color: #FFFFFF;  /*белый*/
     --color-font: #2F303A;  /*темно серый*/
 
+    --bg-color-light: #f5f4fa; 
+    --opposite-basic-color: #000000;
+    --card-set-gap: 30px;
 }
 
 
@@ -16,8 +19,7 @@ body {
    color: var(--text-color);
 }
 
-.logo
-{
+.logo {
     
     font-family: Raleway;
     font-weight: 700;
@@ -26,6 +28,8 @@ body {
     font-style: normal;
     color: var(--text-color);
     letter-spacing: 0.03em;
+    margin-right: 93px;
+    /*margin-left: 200px;*/
     
 }
 .logo-accent {
@@ -48,8 +52,13 @@ ol {
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 0;
+/*margin-block-start: 1em;
+margin-block-end: 1em;
+margin-inline-start: 0px;
+margin-inline-end: 0px;
+*/
+padding-inline-start: 40px; 
 }
-
 
 a {
     text-decoration: none;
@@ -68,50 +77,49 @@ li {
     box-sizing: border-box;
 }
 
-.page-header {
-    justify-content: space-between;
-    
-
+.header>.container {
+    display: flex;
+    align-items: center;
 }
+
+.header {
+        border-bottom: 1px solid #ececec;
+        display: block;
+    }  
 
 .container { 
     margin-left: auto;
     margin-right: auto;
     width: 1230px;
+    /*outline: solid brown 1px;*/
     padding-left: 15px;
     padding-right: 15px;
 }
 
-
-
-.site-nav{
+.header-nav, .adress, .site-nav{
     display: flex;
+    align-items: center;
 }
 
 .item{
     margin-right: 50px;
-   
 }
 
 .item:last-child{
     margin-right: 0;
 }
- 
-}
+
 .header-adress {
-    font-weight: 500;
-    Line-height: 14px;
+font-weight: 500;
+line-height: 14px;
  line-height: 1.14;
  letter-spacing: 0.02em;
- 
  margin-left: auto;
 }
-
-
-
 .adress {
     display: flex;
-}
+    margin-left: auto;
+}*/
 
 .test-link:hover,
 .header-adress:hover,
