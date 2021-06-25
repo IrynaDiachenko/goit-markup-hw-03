@@ -180,13 +180,13 @@ background-color: var(--color-link);
  border: none;
  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
  border-radius: 4px;
- /*margin-bottom: 200px;*/
 
  padding: 10px 32px;
  cursor: pointer;
 
  display: inline-block;
 
+cursor: pointer;
 }
 
 .section {
@@ -242,6 +242,9 @@ div, section, p, h2{
     margin-bottom: 0;
 }
 
+.hero {
+    background-color: var(--bg-color-light);
+}
 
 .hero-title {
     font-size: 36px;
@@ -289,14 +292,13 @@ div, section, p, h2{
 }
 
 .picture-name {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.18;
-    letter-spacing: 0.03em;
-
-    text-align: center;
-    margin-top: 0px;
-    margin-bottom: 10px;
+    color: var(--text-color);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    margin: 0;
+    margin-bottom: 4px;
 }
 
 .command {
@@ -361,13 +363,37 @@ margin-top: 9px;
     color: var(--color-link);
 }
 
+/*PORTFOLIO*/
+
+.center {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.align-horizontal {
+    margin-right: 8px;
+}
+
+.first {
+    color: var(--main-color);
+    background-color: var(--color-link);
+    box-shadow: 0px 2px 2px rgb(0 0 0 / 12%),
+                0px 1px 2px rgb(0 0 0 / 8%);
+}
+
 
 
 .top-menu {
  font-weight: 500;
  font-size: 16px;
- line-height: 1.18;
+ line-height: 1.63;
  letter-spacing: 0.03em;
+ background-color: var(--bg-color-light);
+ border: none;
+ 
+ border-radius: 4px;
+ padding: 6px 22px;
 }
 
 .top-menu:hover,
@@ -376,17 +402,34 @@ color: var(--main-color);
 background-color: var(--color-link);
 }
 
-.btn-order,
 .top-menu {
 cursor: pointer;
 }
 
-.hero {
-    background-color: #F5F4FA;
+
+
+
+
+.picture {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: calc(-1 * var(--card-set-gap));
+    margin-bottom: calc(-1 * var(--card-set-gap));
 }
 
+.picture-item {
+    flex-basis: calc(100% / 3 - var(--card-set-gap));
+    margin-right: var(--card-set-gap);
+    margin-bottom: var(--card-set-gap);
+}
 
-
+.legend {
+    display: block;
+    padding: 20px 24px;
+    border-bottom: 1px solid #eeeeee;
+    border-left: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
+}
 
 
 .description{
@@ -395,6 +438,7 @@ cursor: pointer;
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
+
 }
 
 
