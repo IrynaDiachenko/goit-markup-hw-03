@@ -249,7 +249,7 @@ div, section, p, h2{
     background-color: var(--bg-color-light);
 }
 
-.command-title {
+.section-title {
     font-size: 36px;
     font-weight: 700;
     line-height: 1.17;
@@ -424,6 +424,10 @@ cursor: pointer;
     flex-basis: calc(100% / 3 - var(--card-set-gap));
     margin-right: var(--card-set-gap);
     margin-bottom: var(--card-set-gap);
+}
+
+.legend .picture-name {
+    text-align: left;
 }
 
 .legend {
